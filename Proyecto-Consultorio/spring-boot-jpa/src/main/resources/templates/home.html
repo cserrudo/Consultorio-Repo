@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Consultorio medico</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="especialidades">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="profesionales">Profesionales</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="turnos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Turnos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="buscarTurno">Buscar</a></li>
+                            <li><a class="dropdown-item" href="turnos">Consultar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class = "container text-center mt-4 mb-4" style="max-width: 800px;">
+        <h1>Bienvenido al consultorio medico</h1>
+        <h6 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lacus nisl. Sed nec dictum erat, vitae convallis ligula. Aenean suscipit gravida mi,
+            quis aliquam ipsum pretium eu. Ut iaculis, lacus in eleifend hendrerit, nisi enim tempus ipsum, quis dapibus metus ex ac ligula. Nulla
+            Maecenas pellentesque porttitor accumsan. Quisque lacus odio, imperdiet in tincidunt sit amet, mollis eget neque. Sed id risus diam.
+            Suspendisse urna felis, rutrum hendrerit est in, porttitor accumsan nibh. Praesent vitae nibh sem. Praesent ornare odio augue. Nunc in lacinia mauris.
+            Proin facilisis lorem non erat tristique, in congue turpis facilisis. Quisque aliquet pellentesque odio. </h6>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card bg-light border-0">
+                    <img th:src="@{/images/especialidad-imagen.jpg}" class="card-img-top img-fluid rounded" alt="Especialidad Imagen" style="height: 15rem; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cargar Especialidad</h5>
+                        <a href="especialidad_registro" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card bg-light border-0">
+                    <img th:src="@{/images/profesional-imagen.jpg}" class="card-img-top img-fluid rounded" alt="Profesional Imagen" style="height: 15rem; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cargar Profesional</h5>
+                        <a href="profesional_registro" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card bg-light border-0">
+                    <img th:src="@{/images/turno-imagen.jpg}" class="card-img-top img-fluid rounded" alt="Turno Imagen" style="height: 15rem; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cargar Turno</h5>
+                        <a href="turno_registro" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card bg-light border-0">
+                    <img th:src="@{/images/paciente-imagen.jpg}" class="card-img-top img-fluid rounded" alt="Paciente Imagen" style="height: 15rem; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cargar Paciente</h5>
+                        <a href="paciente_registro" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
